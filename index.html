@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre mim</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <!-- Botão para alternar entre modo claro e escuro -->
+    <button id="toggleTheme" class="theme-toggle">🌙</button>
+
+    <!-- Cabeçalho acolhedor -->
+    <header class="header">
+        <h1 class="title">Bem-vinda à minha jornada!</h1>
+        <p>Uma aventura visual para conhecer mais sobre mim.</p>
+        <button id="startButton" class="start-button">Começar</button>
+    </header>
+
+    <!-- Galeria de fotos -->
+    <section class="gallery" id="gallerySection" style="display:none;">
+        <div class="image-container" id="image1">
+            <img src="img/bolopart2.png" alt="Bolo" class="gallery-img">
+            <p class="caption">Sua filha nunca vai passar vontade de comer algo, eu sou a chef oficial kkkkkkkkk </p>
+            <button class="next-button" data-next="image2">Próxima</button>
+        </div>
+
+        <div class="image-container" id="image2" style="display:none;">
+            <img src="img/churrasqueira.png" alt="Na churrasqueira" class="gallery-img">
+            <p class="caption">Eu na churrasqueira sou um arraso, caprichando no preparo! Quero ver todo mundo curtindo e estou animada para fazer parte da família e desses momentos juntos! </p>
+            <button class="next-button" data-next="image3">Próxima</button>
+        </div>
+
+        <div class="image-container" id="image3">
+            <img src="img/comprando as coisas em casa.JPG" alt="comprando" class="gallery-img">
+            <p class="caption">Sou uma pessoa que vou até no mercado, peso sua filha não vai pegar</p>
+            <button class="next-button" data-next="image4">Próxima</button>
+        </div>
+        <div class="image-container" id="image4">
+            <img src="img/cozinha.JPG" alt="cozinha" class="gallery-img">
+            <p class="caption">Cozinhando no trabalho 🍳😉</p>
+            <button class="next-button" data-next="image5">Próxima</button>
+        </div> 
+        <div class="image-container" id="image5">
+            <img src="img/cozinhando.JPG" alt="na chapa" class="gallery-img">
+            <p class="caption">Preparando mini hambúrgueres direto da chapa para os clientes! Imagina só como ficam quando faço em casa, com sua presença e da sua filha🍔🔥</p>
+            <button class="next-button" data-next="image6">Próxima</button>
+        </div>
+        <div class="image-container" id="image6">
+            <img src="img/estudando na cozinha.JPG" alt="estudando" class="gallery-img">
+            <p class="caption">Estou me dedicando nos estudos para garantir um futuro incrível com sua filha e, claro, para poder presentear minha futura sogra como ela merece </p>
+            <button class="next-button" data-next="image7">Próxima</button>
+        </div>
+        <div class="image-container" id="image7">
+            <img src="img/eu.JPG" alt="foto minha" class="gallery-img">
+            <p class="caption">Prazer meu nome é Rayssa, sou de São Paulo - capital, tenho 19 anos. Atualmente trabalho no JK Iguatemi Cinepolis Vip motivos ter uma renda até entrar na minha area, mas sou programadora, terminei um curso de 6meses pela boticario. Estudando para passar numa faculdade publica, sua filha me motiva bastante e quero fazer Ciencia da Computação. Sou simpatica. Concerto computadores e celular(herdei isso do meu pai). Sou flamenguista. Sou caseira. Gosto de jogos de tabuleiro, como truco, domino e por aí vai. Valorizo muito a familia, acho que momentos são unicos. Gosto de natureza. Gosto de carros e da sua filha, rs kkkkk </p>
+            <button class="next-button" data-next="image8">Próxima</button>
+        </div>
+        <div class="image-container" id="image8">
+            <img src="img/fazendo curso.JPG" alt="Curso" class="gallery-img">
+            <p class="caption">Entre uma aula e outra, só pensando em ser a pessoa que você vai adorar conhecer! </p>
+            <button class="next-button" data-next="image9">Próxima</button>
+        </div>
+        <div class="image-container" id="image9">
+            <img src="img/jogoCRASH.JPG" alt="Curso" class="gallery-img">
+            <p class="caption">Adoro jogar nos meus tempos livres e garantir que sua filha tenha alguém para se divertir e ficar fora dos perigos da cidade. </p>
+            <button class="next-button" data-next="image10">Próxima</button>
+        </div> 
+        <div class="image-container" id="image10">
+            <img src="img/levando pedidos na sala.JPG" alt="trabalhando" class="gallery-img">
+            <p class="caption">Entre bandejas pesadas e sorrisos, mostrando que estou pronta para qualquer desafio, pq olha kkkkkkkkkkk equilibrar isso</p>
+            <button class="next-button" data-next="image11">Próxima</button>
+        </div>
+        <div class="image-container" id="image11">
+            <img src="img/vencedora do torneio.JPG" alt="Curso" class="gallery-img">
+            <p class="caption">Teve um torneio de quem levava os pedidos com mais qualidade possivel e eu ganhei levando 135 pedidos, 21 deles sendo vinhos e pratos</p>
+            <button class="next-button" data-next="image12">Próxima</button>
+        </div>
+        <div class="image-container" id="image12">
+            <img src="img/mae de pet.JPG" alt="Amora" class="gallery-img">
+            <p class="caption">Tenho a Amora, minha cachorrinha mais amada e carinhosa do mundo. Tenho certeza de que você vai adorar conhecê-la. Ela é um amorzinho!</p>
+            <button class="next-button" data-next="image13">Próxima</button>
+        </div>
+
+        <!-- Continue até incluir as 22 imagens -->
+        <div class="image-container" id="image13" style="display:none;">
+            <img src="img/programando.png" alt="Imagem 22" class="gallery-img">
+            <p class="caption">Acabei de concluir um projeto incrível: um site para o Boticário! Foi um desafio divertido e estou realmente feliz com o resultado. </p>
+            <button class="next-button" data-next="endMessage">Finalizar</button>
+        </div>
+    </section>
+
+    <!-- Mensagem final de agradecimento -->
+    <section class="end-message" id="endMessage" style="display:none;">
+        <h2>Espero que tenha gostado de mim!</h2>
+        <p>Foi um prazer compartilhar um pouco do meu dia a dia e habilidades com você. Estou me dedicando bastante, não só para crescer como pessoa, mas também para ser alguém especial na vida da sua filha. Espero que isso mostre um pouco mais do meu compromisso e carinho. Até logo minha futura sogra! S2 </p>
+    </section>
+</body>
+</html>
+
+
+
+
+
+
